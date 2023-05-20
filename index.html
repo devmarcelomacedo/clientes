@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advogado</title>
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01295E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+}
+    
+    
+
+p {
+    font-size: 24px;
+    margin: 30px;
+    color: #fff;
+}
+
+input {
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    height: 30px;
+    width: 352px;
+    margin-bottom: 20px;
+    padding:10px;
+}
+
+textarea {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    height: 100px;
+    width: 352px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+button {
+    background: green;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: bold;
+    width: 174px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.voltar {
+    background: gray;
+}
+
+.entrar-em-contato {
+    position: fixed;
+    top: 15%;
+    left: 31%;
+}
+
+div {
+    transition: opacity 2s;
+}
+    </style>
+</head>
+<body>
+    <div>
+        <abbr title="ADV NILTON ARÊAS"><img src="imagem/ADV NILTON.jpg" alt="Logo da imagem"></abbr>
+
+        <H1>ADVOGADO NILTON ARÊAS</H1>
+
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> Ipsam, doloribus quam provident pariatur, <br> fuga repudiandae repellat et sit recusandae repellendus explicabo, <br> animi sed autem perferendis dolores soluta nisi cum possimus!
+        </p>
+        <p>
+            Envie a sua mensagem 
+        </p>
+            <button onclick="abrir()" class="entrar-em-contato">Entrar em Contato</button>
+    </div>
+
+    <form action="https://formspree.io/f/mlekvqkz" method="post">
+       <input type="text" name="name" required placeholder="Nome">
+       <input type="email" name="email" id="cemail" placeholder="E-mail">
+       <input type="tel" name="telefone" id="ctel" placeholder="Seu telefone:">
+       <textarea placeholder="Digite: Como posso ajudar!"></textarea>
+        <button type="submit">Enviar</button>
+        <button onclick="fechar()"type="button" class="voltar">Voltar</button>
+    </form>
+</body>
+<script>
+    function abrir() {
+        document.querySelector("form").style.opacity = 1
+        document.querySelector("div").style.opacity = 0.2
+    }
+
+    function fechar(){
+        document.querySelector("form").style.opacity = 0
+        document.querySelector("div").style.opacity = 1
+    }
+
+</script>
+
+</html>
