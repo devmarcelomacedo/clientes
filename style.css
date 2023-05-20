@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #01295E;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+
+
+p {
+    font-size: 24px;
+    margin: 30px;
+    color: #fff;
+}
+
+input {
+    display: block;
+    background: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    height: 30px;
+    width: 352px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+textarea {
+    display: block;
+    background-color: #f9f9f9;
+    border: 1px solid #e6e6e6;
+    border-radius: 5px;
+    height: 100px;
+    width: 352px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+button {
+    background: rgb(4, 128, 0);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: bold;
+    width: 174px;
+    cursor: pointer;
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.voltar {
+    background: gray;
+}
+
+.entrar-em-contato {
+    position: fixed;
+    top: 15%;
+    left: 31%;
+}
+
+div {
+    transition: opacity 2s;
+}
+
+.atuacao {
+    background: #4d8ba8;
+}
+
+#area-de-atuacao {
+    font-size: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+    
+}
+
+.lis {
+    list-style: none;
+    font-size: 15px;
+    margin-left: 15px;
+    font-weight: bold;
+}
+
+ol {
+    color: #f9f9f9;
+    margin-left: 15px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}

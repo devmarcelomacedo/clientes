@@ -1,136 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Advogado</title>
+    <link rel="stylesheet" href="style.css">
     <style>
-      * {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    background-color: #01295E;
-    font-family: 'Montserrat', sans-serif;
-}
-
-img {
-    width: 100%;
-}
-
-h1 {
-    color: #FFFFFF;
-    text-align: center;
-    margin-top: 35px;
-}
-    
-    
-
-p {
-    font-size: 24px;
-    margin: 30px;
-    color: #fff;
-}
-
-input {
-    display: block;
-    background: #f9f9f9;
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    height: 30px;
-    width: 352px;
-    margin-bottom: 20px;
-    padding:10px;
-}
-
-textarea {
-    display: block;
-    background-color: #f9f9f9;
-    border: 1px solid #e6e6e6;
-    border-radius: 5px;
-    height: 100px;
-    width: 352px;
-    margin-bottom: 20px;
-    padding: 10px;
-}
-
-form {
-    background: #fff;
-    padding: 20px;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 2s;
-}
-
-button {
-    background: rgb(4, 128, 0);
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: bold;
-    width: 174px;
-    cursor: pointer;
-    color: #fff;
-}
-
-button:hover {
-    opacity: 0.7;
-}
-
-.voltar {
-    background: gray;
-}
-
-.entrar-em-contato {
-    position: fixed;
-    top: 15%;
-    left: 31%;
-}
-
-div {
-    transition: opacity 2s;
-}
-.atuacao {
-    text-decoration: none;
-}
-</style>
+        
+    </style>
 </head>
+
 <body>
     <div>
         <abbr title="ADV NILTON ARÊAS"><img src="imagem/ADV NILTON.jpg" alt="Logo da imagem"></abbr>
 
         <H1>ADVOGADO NILTON ARÊAS</H1>
 
-                <div class="atuacao">
-                    <ul>
-                        Área de atuação: <br>
-                    </ul>
-                    <li>Trabalhista</li>
-                    <li>Tributária</li>
-                    <li>Desportiva</li>
-                    <li>Empresarial</li>
-                    <li>Ambiental</li>
-                    <li>Compliance jurídico</li>
-                    <li>Direito do Estado</li>
-                    <li>Direito da Propriedade Intelectual</li>
-                </div>
+        <div class="atuacao">
+            <ul id="area-de-atuacao">
+                Área de atuação: <br>
+            </ul>
+            <ol>Resumo de cada lei:</ol>
+            <li class="lis"><abbr
+                    title="é qualquer vínculo jurídico de uma pessoa natural que presta uma obra ou serviço mediante contraprestação">Trabalhista</abbr>
+            </li>
+            <li class="lis"><abbr
+                    title="é qualquer vínculo jurídico de uma pessoa natural que presta uma obra ou serviço mediante contraprestação">Tributária</abbr>
+            </li>
+            <li class="lis"><abbr title="é a conhecida Lei Pelé, Lei nº 9.615/1998, que atribuiu aos clubes a obrigatoriedade de se constituírem em clubes-empresas, enquadrou o torcedor como consumidor">Desportiva</abbr></li>
+            <li class="lis"><abbr title=" atua nos direitos e obrigações dos empresários, contratos especiais, títulos de crédito e propriedade industrial.">Empresarial</abbr></li>
+            <li class="lis"><abbr title="E é o conjunto
+                de condições, leis, influências e interações de ordem física, química e biológica,
+                que permite, abriga e rege a vida em todas as suas formas.">Ambiental</abbr></li>
+            <li class="lis"><abbr title="é uma prática que tem como objetivo garantir que uma empresa ou organização esteja em conformidade com as leis e regulamentos aplicáveis em sua área de atuação">Compliance jurídico</abbr></li>
+            <li class="lis"><abbr title="é um ramo do Direito Público que é responsável por interpretar, analisar e garantir que a Constituição do país seja cumprida">Direito do Estado</abbr></li>
+            <li class="lis"><abbr title="É o ramo do Direito Civil que protege a criação humana exteriorizada das mais diversas formas, tais como: invenções em todos os campos da atividade humana">Direito da Propriedade Intelectual</abbr></li>
+        </div>
 
-            <button onclick="abrir()" class="entrar-em-contato">Entrar em Contato</button>
+        <button onclick="abrir()" class="entrar-em-contato">Entrar em Contato</button>
     </div>
 
     <form action="https://formspree.io/f/mlekvqkz" method="post">
-       <input type="text" name="name" required placeholder="Nome">
-       <input type="email" name="email" id="cemail" placeholder="E-mail">
-       <input type="tel" name="telefone" id="ctel" placeholder="Seu telefone:">
-       <textarea placeholder="Digite: Como posso ajudar!"></textarea>
+        <input type="text" name="name" required placeholder="Nome">
+        <input type="email" name="email" id="cemail" placeholder="E-mail">
+        <input type="tel" name="telefone" id="ctel" placeholder="Seu telefone:">
+        <textarea placeholder="Digite: Como posso ajudar!"></textarea>
         <button type="submit">Enviar</button>
-        <button onclick="fechar()"type="button" class="voltar">Voltar</button>
+        <button onclick="fechar()" type="button" class="voltar">Voltar</button>
     </form>
 </body>
 <script>
@@ -139,7 +57,7 @@ div {
         document.querySelector("div").style.opacity = 0.2
     }
 
-    function fechar(){
+    function fechar() {
         document.querySelector("form").style.opacity = 0
         document.querySelector("div").style.opacity = 1
     }
