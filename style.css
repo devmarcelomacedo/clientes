@@ -11,6 +11,9 @@ body {
 img {
     width: 100%;
 }
+#tel {
+    width: 20px;
+}
 
 h1 {
     color: #FFFFFF;
@@ -131,4 +134,8 @@ ol {
     background: #4d8ba8;
     text-decoration: underline;
     opacity: 0.5;
+}
+a {
+    margin: 15px;
+    text-decoration: none;
 }
