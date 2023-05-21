@@ -18,8 +18,15 @@ h1 {
     margin-top: 35px;
     margin-bottom: 35px;
 }
-
-
+#foto {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    top: 15%;
+    left: 31%;
+    position: relative;
+    
+}
 
 p {
     font-size: 24px;
@@ -115,4 +122,14 @@ ol {
     margin-left: 15px;
     font-weight: bold;
     padding-bottom: 10px;
+}
+#ambiental {
+    text-decoration: none;
+    background: #f30303;
+    color: #fff;
+}
+#ambiental:hover {
+    background: #4d8ba8;
+    text-decoration: underline;
+    opacity: 0.5;
 }
